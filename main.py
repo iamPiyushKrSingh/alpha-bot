@@ -9,7 +9,7 @@ import os
 load_dotenv()
 
 # TOKEN variable and retreiving the value from .env file
-TOKEN = os.environ('TOKEN')
+TOKEN = os.environ['TOKEN']
 
 # Intenst for discord Bot
 intents = discord.Intents.default()
