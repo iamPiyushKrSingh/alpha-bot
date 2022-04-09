@@ -4,7 +4,7 @@ This bot is the fun and testing bot for my own geenral purposes. All the code is
 
 ## PURPOSE
 
-- For fun
+- For fun and general purposes.
 - For testing all the features of [discord.py](https://github.com/Rapptz/discord.py).
 - Testing the main features for my main production bot **Coming Soon**.
 - This bot is only available to me. You all can't invite this bot.
