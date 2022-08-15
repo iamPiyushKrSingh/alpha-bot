@@ -1,12 +1,12 @@
 # Importing the discord library for discord bot
+import os
 import discord
 from discord.ext import commands
 
 # importing the dotenv library for Token secracy
-# from dotenv import load_dotenv   ### Uncomment this if u are storing the TOKEN in .env
-# load_dotenv()   ### Uncomment this if u are storing the TOKEN in .env
+# from dotenv import load_dotenv  # Uncomment this if u are storing the TOKEN in .env
+# load_dotenv()  # Uncomment this if u are storing the TOKEN in .env
 
-import os
 
 # TOKEN variable and retreiving the value from .env file
 TOKEN = os.environ['TOKEN']
@@ -21,6 +21,8 @@ bot = commands.Bot(command_prefix="!t ", intents=intents)
 
 @bot.event
 async def on_ready():
+    # set activity of bot as listening
+    await bot.change_presence(status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.listening, name="!t help"))
     print(f"We have logged in as {bot.user}")
     # for making a difference b/w confirmation message and logs!!
     print("--------------------------------------------------------------------------------------------------------------------")
